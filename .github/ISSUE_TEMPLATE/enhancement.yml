@@ -1,0 +1,44 @@
+name: Enhancement / feature request
+description: An idea to improve PocketOBI — a feature, a UI change, a new pack supported, better docs.
+title: "[Enhancement] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! PocketOBI stays deliberately focused — a standalone reader that helps decide whether a pack is worth saving — so not every suggestion fits, but they're all welcome and read.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like PocketOBI to do?
+      placeholder: e.g. "Show the production date and cycle count on the main screen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: What problem does it solve?
+      description: The situation where you'd reach for this. This matters more than the feature itself — it often points to a simpler solution.
+      placeholder: e.g. "I sort packs by age before testing and have to dig into a submenu each time."
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Firmware / UI
+        - Hardware / PCB / enclosure
+        - Documentation
+        - Support for another pack or generation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Sketches, links, a photo, how you'd expect it to look — all optional.
