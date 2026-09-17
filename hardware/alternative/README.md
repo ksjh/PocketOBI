@@ -19,7 +19,7 @@ This directory contains material for producing an alternative PCB version with s
 - __Option 1__: Additional LDO for supplying the TFT and the backlight, requires fitting C1, C2, and U2. Please put a solder blob on the __right half__ of the solder jumper to connect the middle pad and right `LDO` pad. The __left `ESP` pad__ needs to __remain unconnected__. 
 - __Option 2__: ESD protection for the `DATA` and `ENABLE` line (battery interface), requires fitting U3. 
 
-When you do not want to install the additional LDO (__no option 1__), please put a solder blob on right __left half__ of the solder jumper to connect the left `ESD` pad and the middle pad.
+When you __do not want to install an additional LDO (no option 1)__, please put a solder blob on the __left half__ of the solder jumper to connect the left `ESP` pad and the middle pad.
 
 ## License
 
