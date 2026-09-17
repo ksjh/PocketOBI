@@ -22,6 +22,7 @@ This directory contains material for producing an alternative PCB version with s
 - __Option 2__: ESD protection for the `DATA` and `ENABLE` line (battery interface), requires fitting U3. 
 
 When you __do not want to install an additional LDO (no option 1)__, please put a solder blob on the __left half__ of the solder jumper to connect the left `ESP` pad and the middle pad.
+
 ![solder blob position without an LDO](doc/PocketOBI3-SolderJumper-noLDO.jpg)
 
 ## License
