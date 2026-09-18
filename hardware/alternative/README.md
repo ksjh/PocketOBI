@@ -7,10 +7,10 @@ This directory contains material for producing an alternative PCB version with s
 |Designator|Option|Item|Value|Quantity|Notes|
 |----------|------|----|-----|--------|-----|
 |C1, C2|1|Capacitor 0805|10µF 16V|2||
-|J1||Pin Header|12 pins, 2.54 mm pitch, vertical|1|`TFT-Enc`|
-|J2||Connector JST PH B6B-PH-K|1x06 pins, 2.00mm pitch, vertical|1|`BAT_IF`|
-|J3||Screw Terminal KF301|5.08 or 5.0 mm pitch|1|`BAT_GND`|
-|R1, R2||Resistor axial, DIN0207 THT or 0603 SMD|1k|2||
+|J1||Pin Header|12 pins, 2.54 mm pitch, THT, vertical|1|`TFT-Enc`|
+|J2||Connector JST PH B6B-PH-K|1x06 pins, 2.00mm pitch, THT, vertical|1|`BAT_IF`|
+|J3||Screw Terminal|KF301, 5.08 or 5.0 mm pitch|1|`BAT_GND`|
+|R1, R2||Resistor, axial DIN0207 THT, or 0603 SMD|1 kOhm (470 Ohm to 4.7 kOhm)|2||
 |U1||ESP32C3-SuperMini|including pin headers|1||
 |U2|1|3.3V Voltage Regulator (LDO), SOT-23|__many alternatives:__ 662K, XC6206, RT9193-33G, AP2127N-3.3, MCP1700-3302E/TT, ME6206A33M3G, ME6209A33M3G, or similar|1||
 |U3|2|ESD Protection TVS Array, SOT-23-6|USBLC6-2SC6|1||
@@ -22,7 +22,7 @@ This directory contains material for producing an alternative PCB version with s
 - __Option 2__: ESD protection for the `DATA` and `ENABLE` line (battery interface), requires fitting U3.
 ![placement of USBLC6-2SC6 ESD protection](doc/PocketOBI3-ESD.jpg)
 
-When you __do not want to install an additional LDO (no option 1)__, please put a solder blob on the __left half__ of the solder jumper to connect the left `ESP` pad and the middle pad.
+When you __do not want to install an additional LDO (no option 1)__, please put a solder blob on the __left half__ (marked by a small triangle) of the solder jumper to connect the left `ESP` pad and the middle pad.
 
 ![solder blob position without an LDO](doc/PocketOBI3-SolderJumper-noLDO.jpg)
 
